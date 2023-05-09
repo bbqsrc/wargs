@@ -1,0 +1,20 @@
+[package]
+name = "wargs"
+description = "Safe, UTF-8-savvy CommandLineToArgvW"
+authors = ["Brendan Molloy <brendan@bbqsrc.net>"]
+repository = "https://github.com/bbqsrc/wargs"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+utfx = "0.1.0"
+
+[dependencies.windows-sys]
+version = "0.48"
+features = [
+    "Win32_UI_Shell",
+    "Win32_Foundation",
+    "Win32_System_Memory",
+    "Win32_System_Environment",
+]
